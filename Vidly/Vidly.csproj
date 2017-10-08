@@ -245,6 +245,14 @@
     <Compile Include="Migrations\201710070211337_AddReleaseDateToMovie.Designer.cs">
       <DependentUpon>201710070211337_AddReleaseDateToMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710081355205_AddDataAnnotationsMovies.cs" />
+    <Compile Include="Migrations\201710081355205_AddDataAnnotationsMovies.Designer.cs">
+      <DependentUpon>201710081355205_AddDataAnnotationsMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710081401308_AddRequiredReleaseDate.cs" />
+    <Compile Include="Migrations\201710081401308_AddRequiredReleaseDate.Designer.cs">
+      <DependentUpon>201710081401308_AddRequiredReleaseDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -377,6 +385,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710070211337_AddReleaseDateToMovie.resx">
       <DependentUpon>201710070211337_AddReleaseDateToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710081355205_AddDataAnnotationsMovies.resx">
+      <DependentUpon>201710081355205_AddDataAnnotationsMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710081401308_AddRequiredReleaseDate.resx">
+      <DependentUpon>201710081401308_AddRequiredReleaseDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
