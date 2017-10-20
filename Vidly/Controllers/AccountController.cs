@@ -166,7 +166,7 @@ namespace Vidly.Controllers
 
                     //await roleManager.CreateAsync(new IdentityRole("CanManageMovies"));
 
-                    //await UserManager.AddToRoleAsync(user.Id, "CanManageMovies");
+                    await UserManager.AddToRoleAsync(user.Id, "CanManageMovies");
 
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
@@ -380,7 +380,7 @@ namespace Vidly.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, DrivingLicense = model.DrivingLicense };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
